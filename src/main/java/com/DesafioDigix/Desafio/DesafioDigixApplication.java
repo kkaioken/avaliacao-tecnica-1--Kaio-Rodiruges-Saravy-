@@ -1,4 +1,4 @@
-package com.DesafioDigix.Desafio.Digix;
+package com.DesafioDigix.Desafio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
