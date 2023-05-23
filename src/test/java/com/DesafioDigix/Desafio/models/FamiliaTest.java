@@ -1,13 +1,13 @@
-package com.DesafioDigix.Desafio.Digix;
+package com.DesafioDigix.Desafio.models;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DesafioDigixApplicationTests {
-
+class FamiliaTest {
+	
 	@Test
-	void contextLoads() {
+	void familia() {
+		
 	}
-
 }

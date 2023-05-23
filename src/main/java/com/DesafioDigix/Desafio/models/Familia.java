@@ -27,10 +27,13 @@ public class Familia {
 	private double renda;
 	@Column(nullable = false)
 	private String cpfResposavel;
-	public Familia(String nomeResponsavel, double renda, String cpfResponsavel) {
+	@Column(nullable = false)
+	private int quantidadeDependentes;
+	public Familia(String nomeResponsavel, double renda, String cpfResponsavel, int quantidadeDependentes) {
 		this.nomeResposavel = nomeResponsavel;
 		this.renda = renda;
-		this. cpfResposavel = cpfResponsavel;
+		this.cpfResposavel = cpfResponsavel;
+		this.quantidadeDependentes = quantidadeDependentes;
 	}
 
 }
