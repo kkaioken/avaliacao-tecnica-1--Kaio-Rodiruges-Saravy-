@@ -10,6 +10,7 @@ import com.DesafioDigix.Desafio.models.Familia;
 
 @Repository
 public interface FamiliaRepository extends CrudRepository<Familia, Long> {
+    List<Familia> findByNomeContaining(String nomeResposavel);
 
     public List<Familia> findAll();
 }
