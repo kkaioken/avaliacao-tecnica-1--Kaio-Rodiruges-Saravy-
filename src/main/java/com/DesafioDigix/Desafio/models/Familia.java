@@ -22,7 +22,7 @@ public class Familia {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(nullable = false)
-	private String nomeResposavel;
+	private String nome;
 	@Column(nullable = false)
 	private double renda;
 	@Column(nullable = false)
@@ -30,7 +30,7 @@ public class Familia {
 	@Column(nullable = false)
 	private int quantidadeDependentes;
 	public Familia(String nomeResponsavel, double renda, String cpfResponsavel, int quantidadeDependentes) {
-		this.nomeResposavel = nomeResponsavel;
+		this.nome = nomeResponsavel;
 		this.renda = renda;
 		this.cpfResposavel = cpfResponsavel;
 		this.quantidadeDependentes = quantidadeDependentes;

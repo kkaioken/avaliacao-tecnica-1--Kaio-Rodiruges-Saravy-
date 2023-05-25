@@ -26,6 +26,6 @@ public class CalculoService {
 	}
 
 	public String toString(Familia familia) {
-		return "Família: " + familia.getNomeResposavel() + ", Pontuação: " + calcularPontuacao(familia);
+		return "Família: " + familia.getNome() + ", Pontuação: " + calcularPontuacao(familia);
 	}
 }

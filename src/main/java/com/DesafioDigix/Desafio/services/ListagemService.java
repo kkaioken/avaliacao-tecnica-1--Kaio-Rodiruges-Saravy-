@@ -16,25 +16,20 @@ import com.DesafioDigix.Desafio.repository.FamiliaRepository;
 
 @Service
 public class ListagemService {
-	@Autowired
-	private FamiliaRepository familiaRepository;
-	@Autowired
-	private FamiliaService familiaService;
-	@Autowired
-	private CalculoService calculoService;
+
 
 	public static void ListaOrdenada(FamiliaService familiaService) {
-		List<Familia> familias = new ArrayList<>();
-		familias.add(new Familia("Jairo", 1200, "", 2));
-		familias.add(new Familia("Alberto", 700, "", 2));
-		familias.add(new Familia("Mario", 1500, "", 3));
-		familias.add(new Familia("Kleber", 400, "", 1));
+		List<Familia> familia = new ArrayList<>();
+		familia.add(new Familia("Jairo", 1200, "", 2));
+		familia.add(new Familia("Alberto", 700, "", 2));
+		familia.add(new Familia("Mario", 1500, "", 3));
+		familia.add(new Familia("Kleber", 400, "", 1));
 
 		// Ordenar as famílias por pontuação, em ordem decrescente
-		Collections.sort(familias, Comparator.comparingInt(calculoService.calcularPontuacao()).reversed());
+		Collections.sort(familia, Comparator.comparingInt(familiaService.calcularPontuacao()).reversed());
 
 		// Exibir a lista ordenada
-		for (Familia familia : familias) {
+		for (Familia familias : familia) {
 			System.out.println(familia);
 		}
 	}
